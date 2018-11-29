@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="mx.edu.ittepic.practica3_u4_denisseespinosa.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:text="CARRERA ENTRE LA LIERBRE Y TORTUGA"
+        android:textColor="#000000"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="JUGADOR"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SUCESO"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="110dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CASILLA"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="21dp"
+                android:textStyle="bold"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+            <ImageView android:src="@drawable/tortuga"
+                android:layout_width="110dp"/>
+            <TextView android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:id="@+id/tortugasuceso"
+                android:text="\n Resbalón pequeño"
+                android:textColor="#000000"
+                android:textSize="22.5dp"/>
+            <TextView android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:id="@+id/tortugacasilla"
+                android:text="70"
+                android:textColor="#000000"
+                android:textSize="70dp"/>
+        </TableRow>
+        <TableRow>
+            <ImageView android:src="@drawable/liebre"/>
+            <TextView android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:id="@+id/liebresuceso"
+                android:text="\n Resbalón pequeño"
+                android:textColor="#000000"
+                android:textSize="22.5dp"/>
+            <TextView android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:id="@+id/liebrecasilla"
+                android:text="70"
+                android:textColor="#000000"
+                android:textSize="70dp"/>
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_play_arrow_black_18dp"
+            android:onClick="iniciar"
+            android:id="@+id/iniciar"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/baseline_replay_black_18dp"
+            android:onClick="reiniciar"
+            android:id="@+id/reiniciar"
+            />
+    </LinearLayout>
+</LinearLayout>
